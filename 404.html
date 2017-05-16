@@ -22,7 +22,7 @@ if(ethercalc_name.length < 40){
   csv_api_source = 'https://ethercalc.org/_/'+ethercalc_name+'/csv';
   csv_api_source_type = "ethercalc";
 }else{
-  csv_api_source = 'spreadsheets.google.com/tq?key='+ethercalc_name+'&tqx=out:csv';  
+  csv_api_source = 'http://spreadsheets.google.com/tq?key='+ethercalc_name+'&tqx=out:csv';  
   csv_api_source_type = "google";
   // because posting to gsheet is hard to implement, we don't offer submit feature when using gsheet. since it's easy to moderate editing in gsheet, you can just let users edit or comment on it.
   $("#topbar .add.to.list, #topbar .submit.segment").remove();
