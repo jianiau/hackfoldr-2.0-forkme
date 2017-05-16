@@ -498,7 +498,7 @@ var compile_json = function(rows){
 
 // prepare to load or refresh csv data
 var compile_ethercalc = function(){
-  if(csv_api_source_type=="ethercalc"){
+  if(csv_api_source_type==csv_api_source_type){
     // compile ethercalc csv
     $.get(csv_api_source).pipe(CSV.parse).done(compile_json);
   }else{
